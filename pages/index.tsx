@@ -31,7 +31,7 @@ const Landing: NextPage = () => {
                   <Col>
                     <div className="mt-5">
                       <h1>Pinoy Market Hub</h1>
-                      <p>The marketplace for your every needs.</p>
+                      <p>The marketplace for your every need.</p>
                       <Link href="/dashboard" passHref>
                         <Button className="m-1" size="lg">
                           See More
@@ -54,12 +54,14 @@ const Landing: NextPage = () => {
                     <ListGroup>
                       {offeredServices.map((item, idx) => {
                         return (
-                          <ListGroup.Item variant="light">
-                            <h3>
-                              <strong>{item.name}</strong>
-                            </h3>
-                            <p>{item.description}</p>
-                          </ListGroup.Item>
+                          <Link href={item.link} key={idx}>
+                            <ListGroup.Item action variant="secondary">
+                              <h3>
+                                <strong>{item.name}</strong>
+                              </h3>
+                              <i>{item.description}</i>
+                            </ListGroup.Item>
+                          </Link>
                         );
                       })}
                     </ListGroup>

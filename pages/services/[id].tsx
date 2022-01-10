@@ -21,7 +21,7 @@ const ServiceDetail: React.FC = () => {
   }, []);
 
   return (
-    <AppPage title={`${id} | Partner details`}>
+    <AppPage title={`${currentService?.name} | Partner Info`}>
       <AppLayout>
         <Container className="mt-5">
           <Row>

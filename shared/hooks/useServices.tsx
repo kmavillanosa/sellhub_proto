@@ -4,18 +4,21 @@ export const useOfferedServices: () => OfferedService[] = () => {
   return [
     {
       name: "Product selling",
-      description: "Sell your products, go live selling",
+      description: "Sell your products",
       imgSrc: "/assets/trade.png",
+      link: "/sell",
     },
     {
       name: "Mobile Services",
       description: "Delivery apps, Ride hailing",
       imgSrc: "/assets/delivery.png",
+      link: "/services",
     },
     {
       name: "Formal Document Appointments",
       description: "NBI Clearance, SSS, Pagibig, etc",
       imgSrc: "/assets/documents.png",
+      link: "/documents",
     },
   ];
 };

@@ -9,4 +9,5 @@ export interface OfferedService {
   imgSrc: string;
   name: string;
   description: string;
+  link: string;
 }
