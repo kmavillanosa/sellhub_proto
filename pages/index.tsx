@@ -55,7 +55,7 @@ const Landing: NextPage = () => {
                       {offeredServices.map((item, idx) => {
                         return (
                           <Link href={item.link} key={idx}>
-                            <ListGroup.Item action variant="secondary">
+                            <ListGroup.Item action>
                               <h3>
                                 <strong>{item.name}</strong>
                               </h3>
